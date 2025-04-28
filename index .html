@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Application</title>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Search container -->
+   <div class="Search_container">
+    <div class="Search">
+        <input type="text" placeholder="Enter Place Name Here" id="EnterCityName" >
+        <img src="./weather-app-img/images/search.png" alt="" id="Search_btn">
+    </div>
+    <div class="weather">
+        <div class="Forecast">
+            <img src="./weather-app-img/images/clear.png" alt="" id="weatherImg">
+            <h1 id="citynameOP">New York</h1>
+             <div>
+                
+                <h2 id="Temprature">25° Celsius</h2>
+            </div>
+        </div>
+        <div class="details">
+            <div class="humidity">
+                <img src="./weather-app-img/images/humidity.png" alt="" >
+                <div>
+                    <h1 id="HumidityPercent">65<sup>%</sup> </h1><h4>Humidity</h4>
+                </div>
+            </div>
+            <div class="windSpeed">
+                <img src="./weather-app-img/images/wind.png" alt="">
+               <div>
+                <h1 id="WindSpeed">15<sup>Km/h</sup></h1> <h4>Wind Speed</h4>
+               </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  -->
+
+<div class="Right_container">
+    <div class="Right_UPPER">
+        <div class="Feel_like">
+             <i class="fa-solid fa-temperature-low icon" id="icon"></i>
+             <div class="top_mr">
+                <p>Feels like</p>
+                 <h2 id="feels_like">30.99°</h2>
+             </div>
+        </div>
+        <div class="air_pressure">
+            <i class="fa-solid fa-wind icon" id="air_pressure_icon"></i>
+            <div class="top_mr">
+                <p style="font-size: small;">Air Pressure</p>
+                 <h3 id="AirPressure">1009hPa</h3>
+             </div>
+        </div>
+        <div class="Decription">
+            <i class="fa-solid fa-cloud icon"></i>            
+             <div class="top_mr">
+                <p style="font-size: small;">Description</p>
+                 <h4 style="font-size: small; scale: 1.2;" id="description">Clear sky</h4>
+             </div>
+        </div>
+       <div class="visibility">
+        <i class="fa-solid fa-eye icon"></i>          
+        <div class="top_mr">
+           <p >Visibility</p>
+            <h3 id="Visibility_Dist" >10 Km</h3>
+        </div>
+
+       </div>
+    </div>
+    <div class="Statement">
+        <marquee behavior="continuous" direction="left">The Above data Here Shows the Searched data , And Below are the Live Data Cards of Few places  </marquee>
+    </div>
+
+    <div id="Right_lower_container">
+        <div id="crad1" class="cards">
+            <div>
+                <h2>Odisha</h2>
+            </div>
+            <div>
+                <img  alt="" height="70px" class="card_img" id="card_img_1" />
+            </div>
+
+            <div id="DATA_Container1">
+               
+            </div>
+           
+            
+        </div>
+        <div id="crad2" class="cards">
+            <div>
+                <h2>Mumbai</h2>
+            </div>
+            <div>
+                <img  alt="" height="70px" class="card_img" id="card_img_2" />
+            </div>
+
+            <div  id="DATA_Container2">
+               
+            </div>
+        </div>
+        <div id="crad3" class="cards">
+            <div>
+                <h2>Delhi</h2>
+            </div>
+            <div>
+                <img  alt="" height="70px" class="card_img" id="card_img_3" />
+            </div>
+
+            <div  id="DATA_Container3">
+               
+            </div>
+        </div>
+        <div id="crad4" class="cards">
+            <div>
+                <h2>Switzerland</h2>
+            </div>
+            <div>
+                <img  alt="" height="70px" class="card_img" id="card_img_4" />
+            </div>
+
+            <div  id="DATA_Container4">
+                
+            </div>
+        </div>
+        <div id="crad5" class="cards">
+            <div>
+                <h2>Chennai</h2>
+            </div>
+            <div>
+                <img  alt="" height="70px" class="card_img" id="card_img_5" />
+            </div>
+
+            <div  id="DATA_Container5">
+               
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+    </div>
+
+   <script src="./script.js"></script>
+</body>
+</html>
