@@ -1,5 +1,5 @@
 
-const API_KEY = "6d105c27aec1a7bd2a58a3d62b88a880"//The API key
+const API_KEY = API//The API key
 // API for Weather Data
 const APi = `https://api.openweathermap.org/data/2.5/weather?q={cityname}&appid=${API_KEY}` // The API
 
