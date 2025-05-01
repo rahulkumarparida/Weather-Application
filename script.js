@@ -1,5 +1,5 @@
 
-const API_KEY = API//The API key
+const API_KEY = "6d105c27aec1a7bd2a58a3d62b88a880"//The API key
 // API for Weather Data
 const APi = `https://api.openweathermap.org/data/2.5/weather?q={cityname}&appid=${API_KEY}` // The API
 
@@ -258,10 +258,6 @@ cardIMG5.setAttribute("src" , `./weather-app-img/images/${weatheData5}.png` )
     <pre id="c1_des">Desc- ${value.ChennaiData.weather[0].description} </pre>
     <pre id="c1_vis">Visibily- ${value.ChennaiData.visibility/1000}<sub>KM</sub></pre>
     `
-    let PlacesData = [OdishaData , MumbaiData , DelhiData , SwitzerlandData , ChennaiData]
-
-
-   
 
 
     return value
